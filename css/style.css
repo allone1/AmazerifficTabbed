@@ -1,0 +1,162 @@
+/* style.css for Amazeriffic Project
+*/
+
+body {
+  background: #f9e933;
+  font-family: 'Droid Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100%;
+  
+  
+}
+
+h1 {
+	font-family: 'Ubuntu', sans-serif;
+	font-style: normal;
+  	font-weight: 700;
+	font-size: 3em; /* set h1 font size relative to base font size of 100% */
+	
+}
+
+h2 {
+	font-family: 'Ubuntu', sans-serif;
+	font-style: normal;
+  	font-weight: 700;
+	font-size: x-large; /* set h2 font size relative to base font size of 100% */
+	margin: 10px 20px 5px 0; 
+	
+}
+
+h3 {
+	font-family: 'Ubuntu', sans-serif;
+	font-style: normal;
+  	font-weight: 700;
+	font-size: larger; /* set h1 font size relative to base font size of 100% */
+	margin: 10px 20px 5px 0; 
+	
+}
+
+h5 {
+	font-family: 'Ubuntu', sans-serif;
+	font-style: normal;
+  	font-size: 1.1em; /* set h5 font size to 1.2 times the base font size of 100% */
+	font-weight: 600;
+	padding-bottom: 5px;
+	
+}
+
+a {
+	color: red;
+	text-decoration: none;
+	
+}
+
+a:hover {
+	color: red;
+	text-decoration: underline;
+	
+}
+
+header, main, footer {
+  min-width: 855px;
+  padding: 10px 10px 5px 10px;
+   
+}
+
+header .container, main .container, footer .container {
+  max-width: 855px;
+  margin: auto;
+  padding: 10px 10px 5px 10px;
+    
+}
+
+header {
+	background: white;
+	overflow: auto;
+		
+}
+
+header .left {
+	float: left;
+	width: 540px;
+		
+}
+
+header .right {
+	float: right;
+	width: 284px;
+		
+}
+
+
+main {
+	background: white;
+	overflow: auto;
+	
+		
+}
+
+main .left {
+	float: left;
+	width: 540px;
+		
+}
+
+main .right {
+	float: right;
+	width: 284px;
+	
+}
+
+main .right img {
+	width: 120px;
+	height: auto;
+	padding-left:  30px;
+	max-height: 190px;
+	
+}
+
+footer {
+	overflow: auto;
+		
+}
+
+footer .contact {
+ 	float: left;
+	width: 540px;
+	  
+}
+
+footer .sitemap {
+	float: right;
+	width: 284px;
+	
+}
+
+.sitemap ul{
+    width:285px;
+	
+}
+
+
+.sitemap li{
+    float:left;
+	width: 136px;
+	margin:0 6px 6px 0;
+	
+   
+}
+
+
+.faqh3 	{
+	padding-bottom: 20px;
+	
+}
+
+.quest  {
+	color: #6dc7d0;
+	
+}
+
+

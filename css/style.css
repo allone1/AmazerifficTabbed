@@ -40,7 +40,7 @@ h3 {
 h5 {
 	font-family: 'Ubuntu', sans-serif;
 	font-style: normal;
-  	font-size: 1.1em; /* set h5 font size to 1.2 times the base font size of 100% */
+  	font-size: 1.1em; /* set h5 font size to 1.1 times the base font size of 100% */
 	font-weight: 600;
 	padding-bottom: 5px;
 	
@@ -53,7 +53,7 @@ a {
 }
 
 a:hover {
-	color: red;
+	color: black;
 	text-decoration: underline;
 	
 }
@@ -117,6 +117,21 @@ main .right img {
 	
 }
 
+main .content {
+	text-align: left;
+	background: #ddd;
+	border-radius: 5px 5px 5px 5px;
+	padding: 5px;
+	
+}
+
+main .content li {
+	background: #fff;
+	border-radius: 5px 5px 5px 5px;
+	padding: 5px;
+	margin: 10px;
+}
+
 footer {
 	overflow: auto;
 		
@@ -159,4 +174,21 @@ footer .sitemap {
 	
 }
 
+/* format tabs */
+.tabs a span {
+	display: inline-block;
+	border-radius: 5px 5px 0 0;
+	width: 100px;
+	margin-right: 10px;
+	text-align: center;
+	background: #ddd;
+	padding: 5px;
+	
+}
+
+/* format active tab */
+.tabs a span.active {
+	background: #eee;
+	
+}
 

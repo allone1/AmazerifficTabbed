@@ -2,33 +2,36 @@
 var main = function () {
 	"use strict";
 	
-	$(".tabs a:nth-child(1)").on("click", function () {
+	var makeTabActive = function (tabNumber) {
+		// construct the selector from the tabNumber
+		var tabSelector = ".tabs a:nth-child(" + tabNumber + ") span";
+		
 		// make all tabs inactive
 		$(".tabs span").removeClass("active");
 		
 		// make the first tab active
-		$(".tabs a:nth-child(1) span").addClass("active");
+		$(tabSelector).addClass("active");
 		
 		// empty main content so that we can re-create it
 		$("main .content").empty();
 		
-		//return false so we don't follow the link
+	};
+	
+	$(".tabs a:nth-child(1)").on("click", function () {
+		makeTabActive(1);
 		return false;
 	});
 	
 	$(".tabs a:nth-child(2)").on("click", function () {
-		$(".tabs span").removeClass("active");
-		$(".tabs a:nth-child(2) span").addClass("active");
-		$("main .content").empty();
+		makeTabActive(2);
 		return false;
 	});
 	
 	$(".tabs a:nth-child(3)").on("click", function () {
-		$(".tabs span").removeClass("active");
-		$(".tabs a:nth-child(3) span").addClass("active");
-		$("main .content").empty();
+		makeTabActive(3);
 		return false;
 	});
+	
 };
 	
 $(document).ready(main);

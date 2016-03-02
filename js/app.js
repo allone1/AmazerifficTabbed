@@ -42,7 +42,25 @@ var main = function () {
 					});
 					$("main .content").append($content);
 				} else if ($element.parent().is(":nth-child(3)")) {
-					console.log("THIRD TAB CLICKED!");
+					// Create to do input section html structure
+					
+						console.log("THIRD TAB CLICKED!");
+						// create new section
+						var $newSection = $("<section>");
+						$("main .content").append($newSection);
+						
+						// create input button header
+						var $newPara = $("<p>").text("Type your next to do item below");
+						$newSection.append($newPara);
+						
+						// create input field
+						var $newInput = $("<input type='text'>");
+						$newSection.append($newInput);
+						
+						//create new button
+						var $newButton = $("<button>").text("+");
+						$newSection.append($newButton);						
+					
 				}
 				
 				return false;

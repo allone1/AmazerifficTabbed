@@ -1,196 +1,136 @@
-/* style.css for Amazeriffic Project */
-
 body {
   background: #f9e933;
   font-family: 'Droid Sans', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 100%;
-  
-  
-}
-
-h1 {
-	font-family: 'Ubuntu', sans-serif;
-	font-style: normal;
-  	font-weight: 700;
-	font-size: 3em; /* set h1 font size relative to base font size of 100% */
-	
-}
-
-h2 {
-	font-family: 'Ubuntu', sans-serif;
-	font-style: normal;
-  	font-weight: 700;
-	font-size: x-large; /* set h2 font size relative to base font size of 100% */
-	margin: 10px 20px 5px 0; 
-	
-}
-
-h3 {
-	font-family: 'Ubuntu', sans-serif;
-	font-style: normal;
-  	font-weight: 700;
-	font-size: larger; /* set h1 font size relative to base font size of 100% */
-	margin: 10px 20px 5px 0; 
-	
-}
-
-h5 {
-	font-family: 'Ubuntu', sans-serif;
-	font-style: normal;
-  	font-size: 1.1em; /* set h5 font size to 1.1 times the base font size of 100% */
-	font-weight: 600;
-	padding-bottom: 5px;
-	
-}
-
-a {
-	color: red;
-	text-decoration: none;
-	
-}
-
-a:hover {
-	color: black;
-	text-decoration: underline;
-	
 }
 
 header, main, footer {
   min-width: 855px;
-  padding: 10px 10px 5px 10px;
-   
 }
 
 header .container, main .container, footer .container {
   max-width: 855px;
   margin: auto;
-  padding: 10px 10px 5px 10px;
-    
 }
 
 header {
-	background: white;
-	overflow: auto;
-		
+  padding: 25px 0 25px 0;
+  background: white;
+  overflow: auto;
+  border-bottom: 1px solid #ddd;
 }
 
-header .left {
-	float: left;
-	width: 540px;
-		
+/* MAIN LOGO */
+h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: italic;
+  font-size: 3em;
+  color: #b33;
+  float: left;
+  width: 570px;
 }
 
-header .right {
-	float: right;
-	width: 284px;
-		
+/* FOOTER HEADINGS */
+h5 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.25em;
+    margin-bottom: 20px;
 }
 
+header nav {
+  float: right;
+  width: 285px;
+}
+
+a {
+  color: #f00;
+  text-decoration: none;
+  font-weight: bold;
+}
 
 main {
-	background: white;
-	overflow: auto;
-	
-		
+    background: #fff;
+    border-radius: 0 5px 5px 5px;;
+    padding: 40px;
 }
 
-main .left {
-	float: left;
-	width: 540px;
-		
+.tabs a span {
+    border-radius: 5px 5px 0 0;
+    display: inline-block;
+    width: 100px;
+    margin-right: 10px;
+    text-align: center;
+    background: #ddd;
+    padding: 5px;
 }
 
-main .right {
-	float: right;
-	width: 284px;
-	
-}
-
-main .right img {
-	width: 120px;
-	height: auto;
-	padding-left:  30px;
-	max-height: 190px;
-	
+.tabs a .active {
+    background: #eee;
 }
 
 main .content {
-	text-align: left;
-	background: #ddd;
-	border-radius: 5px 5px 5px 5px;
-	padding: 5px;
-	
+    padding: 30px 10px 30px 10px;
+    border-radius: 0 5px 5px 5px;
+    background: #ddd;
 }
 
 main .content li {
-	background: #fff;
-	border-radius: 5px 5px 5px 5px;
-	padding: 5px;
-	margin: 10px;
+	border-radius: 5px;
+	padding: 3px;
+	background: #eee;
+	margin: 0 0 10px 0;
+}
+
+main .content button {
+  font-weight: bold;
+  padding: 0 3px 0 3px;
+  border-radius: 5px;
+  background: #ccc;
+  cursor: pointer;
+  margin-left: 5px;
+  font-size: 1.3em;
+}
+
+
+main .content p {
+    background: yellow;
+}
+
+main .content input {
+    font-size: 1.5em;
 }
 
 footer {
-	overflow: auto;
-		
+    border-top: 1px solid #ddd;
+    padding: 40px 0 20px 0;
 }
 
 footer .contact {
- 	float: left;
-	width: 540px;
-	  
+  float: left;
+  width: 570px;    
+}
+
+footer .contact p:nth-child(2) {
+  color: #b33;
+  font-style: italic;
 }
 
 footer .sitemap {
-	float: right;
-	width: 284px;
-	
+    float: right;
+    width: 285px;
 }
 
-.sitemap ul{
-    width:285px;
-	
+footer ul {
+    width: 230px;
 }
 
-
-.sitemap li{
-    float:left;
-	width: 136px;
-	margin:0 6px 6px 0;
-	
-   
+li {
+    list-style: none;
 }
 
-
-.faqh3 	{
-	padding-bottom: 20px;
-	
+footer .sitemap .left {
+    float: left;
 }
 
-.quest  {
-	color: #6dc7d0;
-	
+footer .sitemap .right {
+    float: right;
 }
-
-/* format tabs */
-.tabs a span {
-	display: inline-block;
-	border-radius: 5px 5px 0 0;
-	width: 100px;
-	margin-right: 10px;
-	text-align: center;
-	background: #ddd;
-	padding: 5px;
-	
-}
-
-/* format active tab */
-.tabs a span.active {
-	background: #eee;
-	
-}
-
-
-
-

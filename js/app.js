@@ -47,7 +47,7 @@ var main = function () {
 						console.log("THIRD TAB CLICKED!");
 						// create new section
 						var $newSection = $("<section>");
-						$("main .content").append($newSection);
+						$("main .content").append($newSection);	
 						
 						// create input button header
 						var $newPara = $("<p>").text("Type your next to do item below");
@@ -59,17 +59,50 @@ var main = function () {
 						
 						//create new button
 						var $newButton = $("<button>").text("+");
-						$newSection.append($newButton);						
+						$newSection.append($newButton);
+						
+					// Create common function for event listeners to carry out
+						var toDoFromInputBox = function () {
+							var $new_todo;
+		
+							if ($newInput.val() !== "") {
+								$new_todo = $newInput.val(); //adds new jquery element li and assigns it value user entered in input field.
+								toDos.push($new_todo);  //pushes new toDo to the toDo array
+								console.log("toDoFromInputBox has been run");
+								$newInput.val(""); //clears out text in the input field
+		
+							} 
+							
+					// Add event listeners
+						$newButton.on("click", function () {
+							toDoFromInputBox ();			
+				
+						});
+		
+						$newButton.on("keypress", function (event) {
+							if (event.keyCode === 13) {
+							toDoFromInputBox ();
+				
+							}
+							
+						});
+							
+							
+					};
+						
+													
 					
 				}
 				
-				return false;
+			return false;
 	
-			});
-			
-			$(".tabs a:first-child span").trigger("click");			
+		});
 			
 	});
+			
+	$(".tabs a:first-child span").trigger("click");			
+			
+
 	
 	
 };
